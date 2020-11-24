@@ -1,6 +1,12 @@
+<div>
 <%= notice %> 
 <p>Title:</p>
 <%= @book.title %><br>
 <p>Body:</p>
-<%= @book.body %>
+<%= @book.body %><br>
+<br>
+<%= link_to 'edit', edit_book_path(id: @book.id) %>
+|
+<%= link_to 'back', books_path%>
+</div>
 
